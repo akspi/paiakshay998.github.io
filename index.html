@@ -1,0 +1,61 @@
+<!Doctype html>
+<html>
+
+	<head>
+	    <title>Akshay Pai</title>
+	    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAD+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+///////////+/v7+/v7+/v////////////////////////////////7+/v7+/v7+/////////////////////////////////v7+/v7+/v7////////////////////////////////+/v7+/v7+/v/////////////////////+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/gAAAP4AAAD+/v7+/v7+/v7+/v7+/////gAAAP6goKD+AAAA/gAAAP7+/v7+/v7+/v7+/v7+/v7+/v7+/v//////////AAAA/gAAAP4AAAD/AAAA/wAAAP8AAAD//////wAAAP8AAAD+/v7+/v///////////////////////////////wAAAP4AAAD+sLCw/wAAAP8AAAD/AAAA//////8AAAD/AAAA/o6Ojv7///////////////////////////////8AAAD+AAAA/v//////////AAAA/5WVlf//////AAAA/wAAAP4AAAD+AAAA/wAAAP///////////////////////v7+/gAAAP4fHx//AAAA/wAAAP///////////wAAAP8AAAD+/v7+/vv7+/8AAAD/AAAA//////////////////7+/v4AAAD+AAAA/wAAAP8AAAD///////////8AAAD/AAAA/v7+/v7/////AAAA/wAAAP/////////////////+/v7+AAAA/gAAAP8AAAD/wsLC////////////AAAA/wAAAP4AAAD+AAAA/wAAAP////////////7+/v7+/v7+/v7+/v7+/v4AAAD+AAAA/v7+/v7+/v7+/v7+/gAAAP4AAAD+AAAA/gAAAP7////+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+///////////+/v7+/v7+/v////////////////////////////////7+/v7+/v7+/////////////////////////////////v7+/v7+/v7////////////////////////////////+/v7+/v7+/v//////////////////////////////////////////////////////////////////////////////////////////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" rel="icon" type="image/x-icon" />
+	    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+	    <meta charset="utf-8">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <link rel="stylesheet" type="text/css" href="static/style/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="static/style/style.css">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container" id="myContainer">
+			<div class="row half center">
+				<div class="row fourth">
+				</div>
+				<div class="row">
+					<img id ="myImage" src="assets/me.png">
+				</div>
+			</div>
+
+			<div class="row half center">
+				<h1>You've reached Akshay Pai!</h1>
+				<h3>I ❤ to build cool stuff</h3>
+				<br><br><br>
+				<a href="#second" id="myButton" class="ghost-button-thick-border"> Scroll Down</a>
+			</div>
+
+			<div  id="second" class="row full">
+				<div class="margin script">
+					<div class="row center">
+						<h2>About Me</h2>
+					</div>
+					<br><br>
+					<div class="row">
+						<p class="text">I'm a CS undergrad at NIT Trichy, one of the best engineering institutes in India.</p>
+						<br>
+						<p class="text">I've done some work in Web Development, Machine Learning and Data Analysis. Check out my github and my resume for some of the projects I've worked on.
+						</p>
+						<br>
+						<p class="text">I've also started blogging recently! Check out my Medium account for some cool articles.</p>
+					</div>
+				</div>
+				<div class="row margin icons">
+					<i class="fa fa-facebook fa-lg fa-2x" style="color:#3b5998;"></i>
+					<i class="fa fa-github fa-2x"></i>
+					<i class="fa fa-medium fa-2x" style="color:#00ab6b;"></i>
+					<i class="fa fa-linkedin fa-2x" style="color:#0077b5;"></i>
+					<i class="fa fa-file-pdf-o no_pad fa-2x" style="color:#AF1515"></i>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+	$("#myButton").click(function() {$('html,body').animate({scrollTop: $("#second").offset().top},1000);});
+	</script>
+</html>
