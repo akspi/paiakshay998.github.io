@@ -16,6 +16,15 @@
 	min-height:18vh;
 }
 
+a{
+	color:black;
+}
+
+a:hover{
+	color:black;
+	text-decoration: none;
+}
+
 #myImage{
 	max-width:200px;
 	height:auto;
