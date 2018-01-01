@@ -57,5 +57,25 @@
 	</body>
 	<script>
 	$("#myButton").click(function() {$('html,body').animate({scrollTop: $("#second").offset().top},1000);});
+	var lastcalled = 1;
+	function funky(offset){
+		if (Date.now() - lastcalled > 1000){
+			lastcalled = Date.now();
+			console.log(lastcalled);
+			$('html,body').animate({scrollTop:offset},1000);
+		}
+	}
+
+	var lastScrollTop = 0;
+	$(window).scroll(function(event){
+    	var st = $(this).scrollTop();
+    	if (st > lastScrollTop){
+    		funky($("#second").offset().top);
+		} else {
+    		funky(10);
+		}
+    	lastScrollTop = st;
+	});
+
 	</script>
 </html>
