@@ -33,11 +33,11 @@
 			<div  id="second" class="row full">
 				<div class="margin script">
 					<div class="row center">
-						<h2>About Me</h2>
+						<h2 id="descTitle" >About Me</h2>
 					</div>
 					<br><br>
 					<div class="row">
-						<p class="text">I'm a CS undergrad at NIT Trichy, one of the best engineering institutes in India.</p>
+						<p id ="myDesc" class="text">I'm a CS undergrad at NIT Trichy, one of the best engineering institutes in India.</p>
 						<br>
 						<p class="text">I've done some work in Web Development, Machine Learning and Data Analysis. Check out my github and my resume for some of the projects I've worked on.
 						</p>
@@ -45,7 +45,7 @@
 						<p class="text">I've also started blogging recently! Check out my Medium account for some cool articles.</p>
 					</div>
 				</div>
-				<div class="row margin icons">
+				<div id="myLinks" class="row margin icons">
 					<a href="https://www.facebook.com/Pai.Akshay.998"><i class="fa fa-facebook fa-lg fa-2x" style="color:#3b5998;"></i></a>
 					<a href="https://github.com/PaiAkshay998"><i class="fa fa-github fa-2x"></i></a>
 					<a href="https://medium.com/@paiakshay998"><i class="fa fa-medium fa-2x" style="color:#00ab6b;"></i></a>
@@ -56,7 +56,7 @@
 		</div>
 	</body>
 	<script>
-	$("#myButton").click(function() {$('html,body').animate({scrollTop: $("#second").offset().top},1000);});
+	$("#myButton").click(function() {$('html,body').animate({scrollTop: $("#myLinks").offset().top},1000);});
 	var lastcalled = 1;
 	function funky(offset){
 		if (Date.now() - lastcalled > 1000){
@@ -70,7 +70,7 @@
 	$(window).scroll(function(event){
     	var st = $(this).scrollTop();
     	if (st > lastScrollTop){
-    		funky($("#second").offset().top);
+    		funky($("#descTitle").offset().top);
 		} else {
     		funky(10);
 		}
