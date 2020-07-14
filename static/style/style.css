@@ -16,6 +16,8 @@
 	min-height:18vh;
 }
 
+
+
 a{
 	color:black;
 }
@@ -59,16 +61,14 @@ i{
 }
 
 .icons{
-	margin-top:10vh;
+	margin-top:5vh;
 	flex: 1 1 auto;
-	text-align:center;
 }
 
 i:hover{
 	font-size:2.7em;
 	transition: 0.1s ease-out;
 }
-
 
 .ghost-button-thick-border {
   display: inline-block;
@@ -77,12 +77,12 @@ i:hover{
   padding: 8px;
   color: #000;
   border: 3px solid #000;
-  text-align: center;
   outline: none;
   text-decoration: none;
   transition: background-color 0.2s ease-out,
               color 0.2s ease-out;
 }
+
 .ghost-button-thick-border:hover,
 .ghost-button-thick-border:active {
   background-color: #000;
@@ -91,4 +91,8 @@ i:hover{
               color 0.3s ease-in;
   text-decoration: none;
   cursor: pointer;
+}
+
+.icon-margin {
+	margin-top: 5px;
 }
